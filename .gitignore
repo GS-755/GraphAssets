@@ -6,7 +6,5 @@
 # Object references
 **/obj/**/*.*
 !/**/obj/**/*.cs
-# Assembly properties
-**/Properties/
 # Custom user profiles
 *.csproj.user
