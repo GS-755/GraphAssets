@@ -1,0 +1,12 @@
+# VS 2022 & vscode catalogs
+.vs/
+.vscode/
+# bin folder
+**/bin/**/**.*
+# Object references
+**/obj/**/*.*
+!/**/obj/**/*.cs
+# Assembly properties
+**/Properties/
+# Custom user profiles
+*.csproj.user
