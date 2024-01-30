@@ -10,6 +10,25 @@
             { get; private set; } = new MyFileAccess();
         private MyFileAccess() { }
 
+        // Method(s)
+        public void CreateDirectory(string path)
+        {
+            try
+            {
+                string directoryName = Path.GetDirectoryName(path);
+                if (!Directory.Exists(directoryName))
+                {
+                    Directory.CreateDirectory(directoryName);
+                    Console.WriteLine($">> Created directory {directoryName} successfully!");
+                }
+
+                return;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
         // Function(s)
         public bool IsFileExists(string path)
         {
@@ -31,12 +50,14 @@
             }
             else if (fileAccess == FileAccess.Read)
             {
+                CreateDirectory(path);
                 Console.WriteLine("Insert data into created text file!");
 
                 return new FileStream(path, FileMode.OpenOrCreate, FileAccess.ReadWrite); 
             }
             else
             {
+                CreateDirectory(path);
                 Console.WriteLine($"Created {Path.GetFileName(path)} with {fileMode} mode!");
 
                 return new FileStream(path, FileMode.OpenOrCreate, FileAccess.ReadWrite);

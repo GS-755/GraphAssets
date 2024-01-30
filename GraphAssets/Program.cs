@@ -9,8 +9,8 @@
     public class Program
     {
         // PATH constants 
-        private static readonly string INP_PATH = ConfigurationManager.AppSettings["path_inp_b2"];
-        private static readonly string OUT_PATH = ConfigurationManager.AppSettings["path_out_b2"];
+        private static readonly string INP_PATH = ConfigurationManager.AppSettings["path_inp_b3"];
+        private static readonly string OUT_PATH = ConfigurationManager.AppSettings["path_out_b3"];
 
 
         public static void TestB1()
@@ -70,8 +70,8 @@
         public static void Main(string[] args)
         {
             // TestB1();
-            TestB2();
-            // TestB3();
+            // TestB2();
+            TestB3();
         }
     }
 }

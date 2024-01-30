@@ -1,6 +1,5 @@
 # VS 2022 & vscode catalogs
 .vs/
-.vscode/
 # bin folder
 **/bin/**/**.*
 # Object references

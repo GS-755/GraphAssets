@@ -50,6 +50,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="bin\Debug\Data\AdjecencyList.inp" />
+    <None Include="bin\Debug\Data\AdjecencyMatrix.inp" />
+    <None Include="bin\Debug\Data\BacVaoRa.inp" />
+    <None Include="bin\Debug\Data\EdgeList.inp" />
     <None Include="bin\Debug\GraphAssets.exe.config" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Debug\GraphAssets.csproj.AssemblyReference.cache" />
@@ -59,7 +63,6 @@
     <Content Include="bin\Debug\GraphAssets.pdb" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="bin\Debug\Data\" />
     <Folder Include="bin\Debug\Output\" />
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
